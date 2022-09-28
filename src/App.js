@@ -7,7 +7,7 @@ function App() {
   const [pratos,setpratos] = useState([])
 
   useEffect(() => {
-    fetch('http://alura-pizza-danilo.herokuapp.com/api/pratos/')
+    fetch('https://alura-pizza-danilo.herokuapp.com/api/pratos/')
       .then(resposta => resposta.json())
       .then(dados => {
         setpratos(dados)
